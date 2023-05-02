@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Credit Card Payment</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body style="background-image:url(https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg);">
+    <form class="c_card" action="./Confirmation.html">
+        <fieldset>
+            <legend>Credit Card Payment 💳</legend>
+            <input type="text" placeholder="Card Holder Name ..." required /><br>
+            <input type="number" placeholder="Card Number ..." required /><br>
+            <label>
+                Expiry: <input type="date" required />
+            </label><br>
+            <label>
+                CVV: <input type="number" name="cvv" id="cvv" placeholder="000" min="100" max="999" required />
+            </label>
+            <button type="submit"> Pay </button>
+        </fieldset>
+    </form>
+</body>
+</html>

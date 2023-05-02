@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:ital@1&display=swap');
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Ramaraja', serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+html {
+    font-size:67.7%;
+}
+#profile
+{
+    font-size:100%;
+}
+#body_home {
+    height: 100vh; width: 100vw; overflow: hidden auto; 
+    background-image: url('https://www.scatteredbooks.com/wp-content/uploads/2019/02/home-slider-content-background-img_panorama.jpg');
+    background-size: cover; background-color: aqua; background-attachment: fixed;
+    display: grid; place-items: center; text-align: center;
+    position: relative;
+}
+#c_name h1 {
+    font-family: 'Bungee', cursive; font-size: 10rem; font-style: italic;
+    color: red; text-shadow: 2px 2px 5px yellow;
+    letter-spacing: 1rem;
+    position: relative; cursor: pointer;
+    padding: 0; margin: 2rem 0;
+    overflow: hidden;
+}
+#c_name h2 {
+    font-size: 5.5rem; text-transform: capitalize; text-decoration: aquamarine dashed underline overline;
+    letter-spacing: 0.7rem; word-spacing: 1.2rem;
+    color: whitesmoke; 
+    padding: 0.2rem;
+}
+#c_name h1::before {
+    content: '';
+    height: 100%; width: 100%;
+    position: absolute; top: 2%; right: 2%;
+    border-top: 0.7rem solid chartreuse; border-right: 0.7rem solid chartreuse;
+    transition-duration: 0.75s; transform-origin: center;
+}
+#c_name h1::after {
+    content: '';
+    height: 100%; width: 100%;
+    position: absolute; bottom: 2%; left: 2%;
+    border-bottom: 0.7rem solid chartreuse; border-left: 0.7rem solid chartreuse;
+    transition-duration: 0.75s; transform-origin: top center;
+}
+#c_name h1:hover::before, #c_name h1:hover::after {
+    height: 35%; width: 20%;
+    transform: rotate(720deg);
+}
+#c_name button {
+    padding: 1rem; 
+    background-color: antiquewhite;
+}
+#c_name button a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: brown;
+}
+
+/*Signup form*/
+#Signup_form {
+    border: 0.5rem solid rebeccapurple;
+    font-weight: bold; font-size: 20px;
+    position: absolute; top: 2%; left: 25%; text-align: left;
+    display: none;
+    background-color: white;
+    width: 50%;
+    padding: 3rem 7rem;
+}
+#Signup_form:target {
+    display: block;
+}
+.close {
+    float: right; margin: -4rem -5rem;
+    font-size: 55px; font-weight: 900;
+    cursor: pointer; user-select: none;
+}
+.close a {
+    text-decoration: none;
+}
+.close a:hover, .close a:focus {
+    color: red;
+}
+.Signup_title{
+    display: block;
+    margin: 0 auto 2rem;
+    font-size: 7rem; text-align: center; font-style: oblique;
+    color: rebeccapurple;
+}
+.Signup_title:hover {
+    background-color: rebeccapurple; color: white;
+}
+#Signup_form label {
+    font-size: 3rem;
+    margin: 1rem 0; display: block;
+}
+#Signup_form label:focus-within {
+    background-color: lightgreen;
+}
+#Signup_form label input {
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 2.5rem; text-transform: capitalize;
+    width: 60%;
+}
+#Signup_form label input:focus {
+    background-color: lightcyan;
+}
+#Signup_form #Signup {
+    margin: 2rem 30%; padding: 1.9rem 2.5rem;
+    border: 0.3rem solid;
+    background-color: purple; color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+#Signup_form #Signup:hover, #Signup_form #Signup:focus {
+    background-color: white; color: purple;
+}
+#Signup_form #remember {
+    display: block;
+    float: left;
+    width: 20px;
+    margin: 0 25px 0 15px;
+}
+.bottom {
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 100%;
+    padding: 15px 20px 25px;
+    position: relative;
+    height: 75px;
+}
+.bottom #reset {
+    display: block; float: left;
+    height: 40px; width: 90px;
+    margin: 5px 0 10px; margin-right: 10%;
+    color: white; background-color: dodgerblue;
+    border: none;
+    cursor: pointer;
+}
+.bottom #reset:hover {
+    background-color: teal;
+}
+.bottom .forget {
+    text-decoration: underline red;
+    color: red;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 22px;
+    position: absolute;
+    right: 5%;
+}
+
+
+
+
+
+/* Profile and cart*/
+#h {
+    text-shadow: 4px 4px 5px rebeccapurple;
+    color: brown;
+    text-align: center;
+}
+
+/*Yobs Credit Card.html*/
+.c_card {
+    width: 35%;
+    margin: 5rem auto;
+}
+.c_card fieldset {
+    width: 100%;
+    padding: 3rem;
+    border-color: peru; background-color: #fff;
+}
+.c_card legend {
+    font-size: 3.5rem;
+    color: peru;
+    text-align: center;
+}
+.c_card input {
+    font-size: 2.2rem; text-transform: capitalize;
+    margin: 2rem auto; padding: 1rem;
+    width: 90%; 
+    color: firebrick;
+}
+.c_card input::placeholder {
+    color: peru;
+}
+.c_card label {
+    font-size: 2.55rem;
+    color: firebrick;
+}
+.c_card label input {
+    font-size: 2.2rem;
+    padding: 1rem;
+    width: 50%;
+    margin: 1rem;
+    color: firebrick;
+}
+#cvv:out-of-range {
+    border: 0.35rem solid red;
+    outline: none;
+}
+#cvv:in-range {
+    border: 0.35rem solid limegreen;
+    outline: none;
+}
+.c_card button {
+    display: block; margin: 2rem auto; padding: 1.5rem;
+    font-size: 3rem; letter-spacing: 0.77rem;
+    background-color: peru; color: white;
+    border: 0.5rem solid;
+}
+.c_card button:hover {
+    background-color: #fff; color: peru;
+}
+
+/*Yobs Store.html*/
+#body_store {
+    height: 100vh; width: 100vw; overflow: hidden auto; 
+    background-image: url('https://images.unsplash.com/photo-1463320726281-696a485928c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ym9va3N0b3JlfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+    background-size: cover; background-color: aqua; background-attachment: fixed;
+    text-align: center;
+    position: relative;
+}
+.head_store {
+    font-family: 'Bungee', cursive; font-size: 5rem; font-style: italic;
+    color: red; text-shadow: 2px 2px 5px green; background-color: yellow;
+    letter-spacing: 1rem; word-spacing: 1.5rem;
+    position: sticky; top: 0; left: 0; cursor: pointer;
+}
+.collection {
+    display: flex; flex-flow: row wrap; 
+    justify-content: space-between; align-items: center;
+}
+.card {
+    background-color: white;
+    box-shadow: 0px 0px 30px 10px grey;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+    width: 350px;
+    transition-duration: 2s;
+    margin: 6rem 5rem;
+    padding: 5px 1px 10px;
+}
+.card h2, .card h3{
+    font-family: Georgia, 'Times New Roman', Times, serif; font-size: 2.2em;
+    text-align: center; text-transform: capitalize;
+    color: white; background-color: black;
+    padding: 5px;
+    display: inline-block;
+}
+.card > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.moveTo_cart {
+    position: sticky; bottom: 0; 
+    padding: 1rem;
+    font-size: 2rem;
+    color: white; background-color: blue;
+}
+
+/* unvisited link */
+.link:link {
+    color:white;
+  }
+  
+  /* visited link */
+.link:visited {
+    color:white;
+  }
+  /* mouse over link */
+  a:hover {
+    color:skyblue;
+  }
+  
+  /* selected link */
+  a:active {
+    color:red;
+  }
+
+  /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
